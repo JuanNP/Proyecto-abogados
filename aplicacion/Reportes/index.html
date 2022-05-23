@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+
+    <title>Reportes</title>
+    <style>
+        body {
+            background-color: rgba(221, 255, 252, 0.822);
+        }
+        table thead{
+            background-color:royalblue;
+            color: white;
+        }
+        header{
+          background-color: white;
+        }
+        span{
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          
+        }
+    </style>
+  </head>
+  <main>
+    <div id="header">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href=""/></svg>
+          <span class="fs-1">Abogados</span>
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="../GestionClientes/index.html" class="nav-link">Gestión Clientes</a></li>
+          <li class="nav-item"><a href="../GestionCasos/index.html" class="nav-link">Gestión Casos</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Reportes</a></li>
+          <li class="nav-item"><a href="../Config/index.html" class="nav-link">Configuración</a></li>
+          <li class="nav-item"><button value="Cerrar" onclick="cerrar()" class="nav-link">Salir</button></li>
+        </ul>
+      </header>
+    </div>
+  </main>
+  <body>
+    <div class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">       
+        <table id="TablaCasos" class="table mt-2 table-bordered table-striped">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Abogado</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Opciones</th>
+
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script src="reportes.js"></script>
+    <script src="../cerrar.js"></script>
+  </body>
+</html>
